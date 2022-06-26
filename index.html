@@ -19,14 +19,14 @@
         ["京都","大阪","三重","滋賀","兵庫","奈良","和歌山"],
         ["鳥取","島根","岡山","広島","山口"],
         ["徳島","香川","愛媛","高知"],
-        ["福島","佐賀","長崎","大分","熊本","宮崎","鹿児島","沖縄"],
+        ["福島","佐賀","長崎","大分","熊本","宮崎","鹿児島","沖縄"]
        ];
       
       areaSelect.addEventListener("change",function(event){
         prefSelect.innerHTML="";
         if(this.value=="")return;
         var list=prefList[this.value];
-        for(var i=0; i<list.length; i++{
+        for(var i=0; i<list.length; i++){
           var option = document.createElement('option');
           option.value=i;
           option.text=list[i];
@@ -40,7 +40,7 @@
         
 <body>
   <select id = "area">
-    <option value="">選択してください</option>
+     <option value="">選択してください</option>
      <option value="0">北海道・東北地方</option>
      <option value="1">関東地方</option>
      <option value="2">中部地方</option>
